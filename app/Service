@@ -1,0 +1,28 @@
+// app/Services/JobRunner.php
+
+namespace App\Services;
+
+use Log;
+use Exception;
+
+class JobRunner
+{
+    // Ejecuta un trabajo en segundo plano
+    public function runBackgroundJob($className, $methodName, $params = [], $retries = 3)
+    {
+        try {
+            // Crear la instancia de la clase y llamar al método
+            $jobInstance = new $className();
+            call_user_func_array([$jobInstance, $methodName], $params);
+            // Registrar el éxito
+            Log::info("Job {$className}::{$methodName} completed successfully.");
+        } catch (Exception $e) {
+            // Registrar el error
+            Log::error("Job {$className}::{$methodName} failed: " . $e->getMessage());
+            // Intentar de nuevo si hay reintentos
+            if ($retries > 0) {
+                return $this->runBackgroundJob($className, $methodName, $params, $retries - 1);
+            }
+        }
+    }
+}

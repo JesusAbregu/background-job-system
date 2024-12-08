@@ -1,0 +1,9 @@
+import Vue from 'vue';
+import Dashboard from './components/Dashboard.vue'; // Asegúrate de que la ruta sea correcta
+
+new Vue({
+    el: '#app',
+    components: {
+        Dashboard
+    }
+});
