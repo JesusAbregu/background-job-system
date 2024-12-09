@@ -8,8 +8,9 @@
     },
     "require": {
         "php": "^7.4 || ^8.0",
-        "laravel/framework": "^9.0"
-        
-
-    }
+        "laravel/framework": "^9.0",
+        "symphony/process": "^6.0",
+        "symphony/http-foundation": "^6.0"
+    },
+    "license": "proprietary"
 }
