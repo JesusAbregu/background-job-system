@@ -27,10 +27,10 @@ class BackgroundJobRunner
             // Instanciar la clase y verificar que el método exista
             $classInstance = new $className();
             if (!method_exists($classInstance, $methodName)) {
-                throw new Exception("Método no encontrado: " . $methodName);
+                throw new Exception("Método no encontrada: " . $methodName);
             }
 
-            // Construir el comando para ejecutar en segundo plano
+            // Construir el commando para ejecutar en segundo plano
             $paramsString = implode(' ', array_map('escapeshellarg', $parameters));
             $command = "php artisan job:run $className $methodName $paramsString";
 

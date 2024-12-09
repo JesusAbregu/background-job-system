@@ -1,5 +1,18 @@
 import Vue from 'vue';
-import Dashboard from './components/Dashboard.vue'; // Asegúrate de que la ruta sea correcta
+import Dashboard from {
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
+    "vscode-edge-devtools.webhint": false,
+    "bitoAI.appearance.fontSize": 14, // Change false to a number
+    "bitoAI.codeCompletion.enableAutoCompletion": true,
+    "bitoAI.codeCompletion.enableCommentToCode": true,
+    "cSpell.caseSensitive": true,
+    "workbench.settings.applyToAllProfiles": [
+        "CodeGPT.Autocomplete.provider"
+    ]
+}; // Asegúrate de que la ruta sea correcta
 
 new Vue({
     el: '#app',

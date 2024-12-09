@@ -1,0 +1,56 @@
+{
+  "workbench.editorAssociations": {
+      "*.exe": "default",
+      "*.dll": "default"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "cloudcode.updateChannel": "Insiders",
+  "workbench.colorTheme": "Homebrew",
+  "CodeGPT.Autocomplete.maxTokens": 600,
+  "editor.defaultFoldingRangeProvider": "DanielSanMedium.dscodegpt",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.commandsToSkipShell": [],
+  "editor.cursorBlinking": "expand",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.guides.bracketPairs": true,
+  "breadcrumbs.filePath": "off",
+  "notebook.stickyScroll.enabled": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.linkedEditing": true,
+  "notebook.formatOnSave.enabled": true,
+  "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+  },
+  "chatgpt.lang": "en",
+  "git.enableSmartCommit": true,
+  "cmake.configureOnOpen": true,
+  "cmake.pinnedCommands": [
+      "workbench.action.tasks.configureTaskRunner",
+      "workbench.action.tasks.runTask"
+  ],
+  "vscode-edge-devtools.webhint": false,
+  "bitoAI.appearance.fontSize": false,
+  "bitoAI.codeCompletion.enableAutoCompletion": true,
+  "bitoAI.codeCompletion.enableCommentToCode": true,
+  "cSpell.caseSensitive": true,
+  "workbench.settings.applyToAllProfiles": [
+      "CodeGPT.Autocomplete.provider",
+      "terminal.integrated.commandsToSkipShell"
+  ],
+  "errorLens.respectUpstreamEnabled": {
+      "statusBar": true
+  },
+  "rapidapi.hub.enabled": true,
+  "rapidapi.ssl.verification": true,
+  "rapidapi.terminalLink.enabled": true,
+  "CodeGPT.apiKey": "OpenAI",
+  "CodeGPT.query.language": "Spanish",
+  "editor.inlineSuggest.showToolbar": "onHover",
+  "msg.dbEditor.connectionBrowser.showGreeting": false,
+  "cSpell.userWords": [
+      "Acciones", "agregar", "aquí", "autofetch", "bito", "Cancelar", "Clase", 
+      "cloudcode", "Completados", "dscodegpt", "Estado", "estilos", "Lista", 
+      "necesitas", "Puedes", "rapidapi", "Trabajo", "usuario", "webhint"
+  ],
+  "git.autofetch": true
+}
